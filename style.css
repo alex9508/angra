@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    display: flex;
+    flex-direction: column; /* Alinea los elementos verticalmente */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    font-family: Arial, sans-serif;
+    animation: gradientAnimation 10s ease infinite; /* Agregar la animación */
+    background: linear-gradient(270deg, #ff7e5f, #feb47b); /* Degradado inicial */
+    background-size: 400% 400%; /* Tamaño del fondo para la animación */
+    text-align: center; /* Asegura que el texto esté centrado */
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.image-container {
+    margin: 20px 0;
+}
+
+.image-container img {
+    width: 150px; /* Ancho fijo más pequeño */
+    height: 150px; /* Alto fijo más pequeño */
+    object-fit: cover; /* Asegura que la imagen se recorte correctamente */
+}
+
+h1 {
+    color: white;
+}
+
+#word-display {
+    font-size: 1.8em; /* Tamaño de fuente más pequeño para móviles */
+    letter-spacing: 5px;
+    color: white;
+}
+
+#message {
+    font-size: 1.5em;
+    color: white;
+}
+
+#letter-input {
+    font-size: 1.5em;
+    padding: 10px;
+    margin: 10px 0; /* Espaciado para el campo de entrada */
+}
+
+#restart-button {
+    font-size: 1.5em;
+    padding: 10px 20px;
+    margin-top: 20px; /* Espaciado para el botón */
+}
